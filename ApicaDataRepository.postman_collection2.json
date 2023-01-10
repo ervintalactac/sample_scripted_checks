@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "a2259ac3-a2bb-4e0b-8882-90e50ce4d0d4",
+		"name": "ApicaDataRepository",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test retrieve row by column",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TableName\":\"sample_table\",\n    \"MatchColumnNames\":[\"index\"],\n    \"MatchColumnValues\":[\"1\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8992?cmd=ats_retrieve_row_by_column",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8992",
+					"query": [
+						{
+							"key": "cmd",
+							"value": "ats_retrieve_row_by_column"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
