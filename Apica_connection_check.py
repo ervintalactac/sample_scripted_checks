@@ -1,3 +1,4 @@
+import time
 import sys
 from snowflake.connector import connect
 import logging
