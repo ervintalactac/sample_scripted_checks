@@ -10,27 +10,7 @@ PASSWORD = 'sn0wflak3_SF@apicadev9'
 ACCOUNT = 'deltadentalins-dev'
 
 start = time.time()
-conn = connect(
-    user=USER,
-    password=PASSWORD,
-    account=ACCOUNT,
-    #warehouse=WAREHOUSE, --optional if you want to use WH for running other queries as part of script
-    session_parameters={
-        'QUERY_TAG': 'APICA',
-    }
-    )
 
-
-sql1 = 'SELECT CURRENT_TIMESTAMP() AS CURRENT_TIME, CURRENT_USER AS CONNECTED_USER'
-
-cursor = conn.cursor()
-cursor.execute(sql1)
-
-df = cursor.fetch_pandas_all()
-#print(df)
-
-current_time = df.CURRENT_TIME[0]
-current_user = df.CONNECTED_USER[0]
 
 #json = df.to_json()
 #print(json)
