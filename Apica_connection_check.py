@@ -1,5 +1,3 @@
-# this is our basic python connection test script from the docs
-#!/usr/bin/env python
 import sys
 from snowflake.connector import connect
 import logging
