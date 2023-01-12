@@ -20,13 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://192.168.1.87:8992?cmd=ats_retrieve_row_by_column",
+					"raw": "http://192.168.1.69:8992?cmd=ats_retrieve_row_by_column",
 					"protocol": "http",
 					"host": [
 						"192",
 						"168",
 						"1",
-						"87"
+						"69"
 					],
 					"port": "8992",
 					"query": [
