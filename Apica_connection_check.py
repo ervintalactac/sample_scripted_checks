@@ -36,29 +36,17 @@ current_user = df.CONNECTED_USER[0]
 #print(json)
 
 json_return = {
-
-"returncode":0,
-
-"start_time":1622120634,
-
-"value":"0",
-
-"end_time":1622120638,
-
-"message":"HTTP Call completed with status OK",
-
-"metrics":{
-
-"duration":0,
-
-"content_size":1256,
-
-"header_count":11,
-
-"http_status":200
-
-}
-
+  "returncode": 0,
+  "start_time": 1622120634,
+  "value": 0,
+  "end_time": 1622120638,
+  "message": "HTTP Call completed with status OK",
+  "metrics": {
+    "duration": 0,
+    "content_size": 1256,
+    "header_count": 11,
+    "http_status": 200
+  }
 }
 
 print(json.dumps(json_return))
