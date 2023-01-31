@@ -37,6 +37,7 @@ cursor.execute(sql2)
 df = cursor.fetch_pandas_all()
 #print(df)
 #print(first_row)
+cursor.close()
 
 
 return_code = 0
@@ -65,5 +66,4 @@ json_return = {
     "value": value_code
 }
 print(json.dumps(json_return))
-cursor.close()
 #print("Closed Snowflake connection")
