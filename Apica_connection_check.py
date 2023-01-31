@@ -31,13 +31,13 @@ sql2 = "select * from table(information_schema.login_history_by_user(user_name =
 
 startTime = time.time()
 
-cursor = conn.cursor()
-cursor.execute(sql2)
+#cursor = conn.cursor()
+#cursor.execute(sql2)
 #first_row = cur.fetchone()
-df = cursor.fetch_pandas_all()
+#df = cursor.fetch_pandas_all()
 #print(df)
 #print(first_row)
-cursor.close()
+#cursor.close()
 
 
 return_code = 0
