@@ -27,7 +27,6 @@ cursor = conn.cursor()
 response = cursor.execute(sql1)
 
 df = cursor.fetch_pandas_all()
-response.`
 #print(df)
 
 current_time = df.CURRENT_TIME[0]
