@@ -24,7 +24,7 @@ conn = connect(
 sql1 = "SELECT CURRENT_TIMESTAMP() AS CURRENT_TIME, CURRENT_USER AS CONNECTED_USER"
 
 cursor = conn.cursor()
-cursor.execute(sql1)
+response = cursor.execute(sql1)
 
 df = cursor.fetch_pandas_all()
 #print(df)
