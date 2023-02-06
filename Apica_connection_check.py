@@ -27,6 +27,7 @@ cursor = conn.cursor()
 response = cursor.execute(sql1)
 
 df = cursor.fetch_pandas_all()
+response.`
 #print(df)
 
 current_time = df.CURRENT_TIME[0]
@@ -39,9 +40,9 @@ json_return = {
     "returncode": 0,
     "current_time": current_time,
     "current_user": current_user,
-    "message": "URL call returned status code: " + str(response.status_code),
+    "message": "IS_LOGIN_SUCCESSFUL: " + df.IS_SUCCESS[0],
     "unit": "ms",
-    "value": response.status.code,
+    "value": df.ERROR_CODE[0],
 
 }
 print(json.dumps(json_return))
