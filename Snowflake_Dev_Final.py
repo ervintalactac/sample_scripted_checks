@@ -58,8 +58,8 @@ else:
 
 json_return = {
     "returncode": return_code,
-    "start_time": current_time,
-    "end_time": current_time,
+    "start_time": start_time,
+    "end_time": end_time,
     "current_user": current_user,
     "message": message,
     "value": value_code
