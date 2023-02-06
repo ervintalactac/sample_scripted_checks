@@ -6,9 +6,9 @@ import logging
 import json
 import pandas as pd
 
-USER = ""
-PASSWORD = ""
-ACCOUNT = ""
+USER = "SVC_SNOWDEV_EDPDEV_APICA"
+PASSWORD = "sn0wflak3_SF@apicadev9"
+ACCOUNT = "deltadentalins-dev"
 
 conn = connect(
     user=USER,
